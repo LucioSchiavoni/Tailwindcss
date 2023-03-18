@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Agregamos la biblioteca Tailwind al HTML importado desde un CDN   Las clases de Tailwind se aplican a los elementos HTML utilizando el atributo class y su sintaxis consiste en la combinación de palabras clave que describen los estilos que deseas aplicar. Por ejemplo, text-center aplica la alineación centrada al texto.
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Deisy UI es un conjunto de componentes de interfaz de usuario (UI) que se pueden utilizar para diseñar y desarrollar aplicaciones web y móviles. Estos componentes están diseñados para ser flexibles, personalizables y fáciles de usar, lo que los hace ideales para proyectos de cualquier tamaño o complejidad.
+    En este caso estoy usando Daisy UI para usar su estilo de botones con la clase "btn" tambien estoy usando su clase "navbar" -->
+    <link rel="stylesheet" href="style.css">
+    <title>Animals UTU</title>
+</head>
+
+<body class="bg-gradient-to-r from-yellow-700 to-indigo-700  ">
+    <!--linear gradient que va de color amarillo a color indigo y el numero 700 es la intensidad del color, cuanto mas bajo mas claro-->
+
+
+
+    <!-- centramos todo con flex item-center justify-center-->
+    <div class="navbar flex item-center justify-center gap-10">
+        <!-- navbar es una clase de daisyUI para bajar un poco el menu y darle espacios-->
+
+        <img src="img/logotigre.svg" class="w-20 h-20 rounded " alt="tigre">
+        <button class="btn  "><a href="#"> Home</button>
+        <button class="btn"><a href="#"> Contact</button>
+        <button class="btn"><a href="#"> About</button>
+        <h1 class="text-4xl text-white hover:text-black  title-css">
+            <!--title-css clase de css(no tailwind)-->
+            Bienvenido
+        </h1>
+    </div> <br>
+
+    <!--mt-10 seria margin-top: 10rem; lo mismo aplica para margin-bottom: 10rem;(mb-10), margin-rigth: 10rem; (mr-10) y margin-left:10; (ml-10) en este caso use 10 rem pero se puede poner cualquier otra medida en rem -->
+
+    <div class="flex item-center justify-center mt-1/5 gap-5 ">
+
+        <!-- hover:rotate-45 es para que se gire la imagen 45 grados y duration-150 seria la transición que dura el hover  -->
+        <img src="img/gato.JPG"
+            class="w-1/5 h-1/5 rounded border hover:w-1/6 duration-150 hover:rotate-45 hover:grayscale" alt="gato">
+        <!--hover:grayscale significa que cuando pasamos el cursor la imagen se pone en blanco y negro-->
+
+        <img src="img/gato.JPG"
+            class="w-1/6 h-1/6 rounded border hover:w-1/5 duration-150 hover:rotate-180 hover:grayscale-150 -translate-y-6"
+            alt="gato">
+        <!--  w-1/5 significa su width de 40% los porcentajes se escriben de manera fraccionada para los width y height, si lo quiere poner con rem seria w-40
+        -->
+
+        <img src="img/gato.JPG" class="w-1/5 h-1/5 rounded border hover:w-1/6 duration-150 hover:rotate-180 "
+            alt="gato">
+        <img src="img/gato.JPG"
+            class="w-1/6 h-1/6 rounded border hover:w-1/5 duration-150 hover:rotate-45 hover:grayscale -translate-y-6  "
+            alt="gato">
+        <!-- hover:translate-y-6 significa que cuando se pasa el cursor por arriba el texto es mueve hacia arriba con un margen de 6rem-->
+    </div>
+
+
+    <table class=" flex item-center justify-center mt-20 text-2xl gap-10 text-white ">
+
+        <tbody class="w-40 ">
+            <tr class="border ">
+
+
+
+                <th class="border px-20">Nombre</th>
+                <th class="border">Apellido</th>
+                <th>Telefono</th>
+            </tr>
+            <tr class="border">
+                <td class="border  px-20">Laura </td>
+                <td class="border  px-20">Acunha</td>
+                <td class="borde  px-20">0991010999</td>
+            </tr>
+            <tr class="border">
+                <td class="border  px-20">Ana</td>
+                <td class="border  px-20">Gomez</td>
+                <td class="border ">099566040</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="flex item-center justify-center w-80 border ml-56  hover:-translate-y-20 duration-150">
+        <!-- hover:translate-y-20 significa que cuando se pasa el cursor por arriba el texto es mueve hacia arriba con un margen de 20rem-->
+
+
+        <p class="px-6 text-white"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+            officiis, modi cupiditate
+            nesciunt cum
+
+            vel, ipsum adipisci magni, atque a alias exercitationem quisquam hic! Quasi perspiciatis delectus quos
+            inventore culpa praesentium distinctio tenetur velit amet ullam! Aliquam obcaecati tenetur minima, maiores
+            ex voluptatem laboriosam recusandae maxime repellat. Soluta, suscipit quibusdam ipsum atque consequatur
+            nobis dolores quisquam aperiam illo ratione perferendis amet voluptatum expedita incidunt quam! Nulla ipsum
+            illum incidunt hic!</p>
+    </div>
+    <b>
+        <p class="flex center-item justify-center mt-20 text-white">Datos del dev:</p>
+    </b>
+    <footer class=" gap-10">
+        <div class="flex center-item justify-center">
+            <a href="wpp.html"><img src="img/w.PNG"
+                    class="w-10 h-10 mb-4 mt-2 border duration-150 hover:grayscale border-css" alt="wpp">
+                <!--border-css clase de css(no tailwind)-->
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
